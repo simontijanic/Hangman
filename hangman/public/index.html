@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <script defer src="../game.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Gothic&family=Oswald:wght@200..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <section>
+
+
+        <div class="points hidden">
+            <img id="sticker" src="gfx/Sticker.png" alt="">
+            <p id="points">0</p>    
+        </div>
+
+        <div class="start">
+            <h1>Enter your name:</h1>
+            <input type="text" id="nameInput">
+        </div>
+
+        <div class="container hidden">
+     
+
+            <div class="top">
+                <p id="hint">HANGMAN</p>
+                <h1 id="output">_ _ _ _ _ _</h1>
+            </div>
+    
+            <div class="center">
+                <img  src="gfx/Head.png" alt="">
+                <img class="hidden" src="gfx/Arm1.png" alt="">
+                <img class="hidden" src="gfx/Arm2.png" alt="">
+                <img class="hidden" src="gfx/Torso.png" alt="">
+                <img class="hidden" src="gfx/Leg1.png" alt="">
+                <img class="hidden" src="gfx/Leg2.png" alt="">
+            </div>
+
+            <div class="bottom">
+                <input type="text" id="input" maxlength="1">
+            </div>
+        </div>
+
+        <footer>
+            <p>Remember that capitalized letters and spaces are counted. Project made by Simon Tijanic, 2024</p>
+        </footer>    
+    </section>
+
+
+</body>
+</html>

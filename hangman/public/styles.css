@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    --main: #FF4D80;
+    --secondary: #7c203a70;
+    --third: rgb(230, 230, 230)
+
+
+    
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    height: 100vh;
+    width: 100%;
+        
+    background-color: var(--main);
+    background-image: url(gfx/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: "Nanum Gothic", sans-serif;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */  
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    gap: 2em;
+
+}
+#hint {
+    font-size: 1.5em;
+    font-weight: 100;
+    font-style: italic;
+}
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 1em;
+
+    text-align: left;
+
+    color: var(--third);
+}
+.points {
+    position: fixed;
+    left: 70%;
+    bottom: 50%;
+
+    font-weight: 800;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+    
+    top: 95.5%;
+
+    position: fixed;
+    width: 100%;
+    background-color: var(--secondary);
+    color: var(--third);
+
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 800;
+}
+.points img {
+    width: 50%;
+}
+.points P {
+    position: fixed;
+    color: white;
+    font-size: 4em;
+}
+#output {
+    letter-spacing: 2ch;
+    color: var(--third);
+}
+.bottom {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#input {
+    
+    font-family: "Nanum Gothic", sans-serif;
+
+    font-weight: 900;
+
+    outline: none;
+    font-size: 1.5em;
+    line-height: 1em;
+    padding: 0.25em 0.5em;
+    border-radius: 10px;
+
+    border: 2px solid var(--third);
+
+    width: 5%;
+
+    background: transparent;
+    color: var(--third);
+
+    text-align: center;
+
+}
+.center {
+    width: 100%;    
+    height: 50vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center img {
+    width: 20%;
+    position: absolute;
+    z-index: 10;
+}
+.start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 1em;
+
+    
+}
+.start input {
+    font-family: "Nanum Gothic", sans-serif;
+
+    font-weight: 900;
+
+    outline: none;
+    font-size: 1.5em;
+    line-height: 1em;
+    padding: 0.25em 0.5em;
+    border-radius: 10px;
+
+    border: 2px solid var(--third);
+
+    width: 95%;
+
+    background: transparent;
+    color: var(--third);
+}
+
+.hidden {
+    display: none;
+}
